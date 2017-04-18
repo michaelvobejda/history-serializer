@@ -1,0 +1,46 @@
+{
+  "name": "@novacredit/history-serializers",
+  "version": "0.0.1",
+  "description": "Serializers for payment-histories received from data suppliers",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register",
+    "build": "npm run transpile",
+    "upgrade": "ncu -ua && npm i",
+    "transpile": "babel src/ -d build/",
+    "clean": "rm -rf build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neednova/history-serializers.git"
+  },
+  "keywords": [
+    "Nova",
+    "Nova Credit",
+    "Nova Credit Inc."
+  ],
+  "author": "Loek Janssen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neednova/history-serializers/issues"
+  },
+  "homepage": "https://github.com/neednova/history-serializers#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.23.1",
+    "babel-plugin-check-es2015-constants": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.2.0",
+    "npm-check-updates": "^2.10.3",
+    "should": "^11.2.1",
+    "sinon": "^1.17.7",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "moment": "^2.17.1"
+  }
+}
