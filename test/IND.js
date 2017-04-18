@@ -1,5 +1,5 @@
 /* global define, it, describe, beforeEach, afterEach */
-import constants from '../build/constants';
+import constants from '../test/constants';
 import createHistorySerializer from '../src/index.js';
 
 var should = require('should');
